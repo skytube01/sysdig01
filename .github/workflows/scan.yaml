@@ -12,7 +12,12 @@ jobs:
       run: docker build . --file Dockerfile --tag sysdiglabs/dummy-vuln-app:latest
     
     - name: Scan image
-      uses: sysdiglabs/scan-action@v1
+      id: scan
+      uses: sysdiglabs/scan-action@v3
       with:
         image-tag: "sysdiglabs/dummy-vuln-app:latest"
         sysdig-secure-token: ${{ secrets.KUBELAB_SECURE_API_TOKEN }}
+        dockerfile-path: ./Dockerfile
+        input-type: docker-daemon
+        run-as-user: root
+        ignore-failed-scan: true
