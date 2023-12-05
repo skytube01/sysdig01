@@ -1,2 +1,0 @@
-- name: Sysdig Secure Inline Scan
-  uses: sysdiglabs/scan-action@v3.6.0
