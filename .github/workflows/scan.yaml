@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Scan dummy-vuln-app from registry
         id: scan
-        uses: sysdiglabs/scan-action@master
+        uses: skytube01/sysdig01@main
         with:
           # Tag of the image to analyse
           image-tag: sysdiglabs/dummy-vuln-app:latest
