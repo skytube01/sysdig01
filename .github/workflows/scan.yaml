@@ -16,7 +16,7 @@ jobs:
       uses: sysdiglabs/scan-action@v3
       with:
         image-tag: "sysdiglabs/dummy-vuln-app:latest"
-        sysdig-secure-token: ${{ secrets.SYSDIG_SECURE_TOKEN }}
+        sysdig-secure-token: 6b976743-50c1-4d51-91cb-f141ed15d7fa
         dockerfile-path: ./Dockerfile
         input-type: docker-daemon
         run-as-user: root
