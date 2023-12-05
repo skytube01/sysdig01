@@ -1,7 +1,7 @@
 name: Scan Image
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   scan-from-registry:
@@ -30,7 +30,7 @@ jobs:
 
       - name: Scan dummy-vuln-app from archive
         id: scan
-        uses: sysdiglabs/scan-action@master
+        uses: skytube01/sysdig01@main
         with:
           # Tag of the image to analyse
           image-tag: sysdiglabs/dummy-vuln-app:latest
