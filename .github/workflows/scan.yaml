@@ -1,4 +1,5 @@
-SYSDIG_SECURE_ENDPOINT: "https://us2.app.sysdig.com"
+env:
+    SYSDIG_SECURE_ENDPOINT: "https://us2.app.sysdig.com"
     REGISTRY_HOST: "quay.io"
     IMAGE_NAME: "mytestimage"
     IMAGE_TAG: "my-tag"
