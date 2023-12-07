@@ -17,7 +17,7 @@ jobs:
       with:
         image-tag: "sysdiglabs/dummy-vuln-app:latest"
         sysdig-secure-token: "6b976743-50c1-4d51-91cb-f141ed15d7fa"
-	sysdig-secure-url: https://us2.app.sysdig.com
+	sysdig-secure-url: "https://us2.app.sysdig.com"
         dockerfile-path: ./Dockerfile
         input-type: docker-daemon
         run-as-user: root
